@@ -8,6 +8,8 @@ const Edit = ({ content, typeSchema }) => (
     initialValues={content}
     typeSchema={typeSchema}
     onSave={values => {
+      console.log('contet', content);
+      console.log('val', values)
       save(content.type, values.slug, values);
     }}
   />

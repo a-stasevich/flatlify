@@ -4,6 +4,7 @@ const path = require('path');
 
 const save = (contentType, contentName, data, cb) => {
   console.log(data);
+  console.log('contentType', contentType);
   const filePath = path.resolve('_content', contentType, contentName + '.json');
   fse.outputFile(filePath, data, cb);
 };
